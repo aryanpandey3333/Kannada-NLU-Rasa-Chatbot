@@ -1,0 +1,24 @@
+version: "3.1"
+
+intents:
+- greet
+- goodbye
+- thanks
+- help
+- query
+
+responses:
+  utter_greet:
+  - text: "ಹಲೋ! ಸಾಮ್ಸಂಗ್ ಸಹಾಯ ಬಾಟ್ ಗೆ ಸ್ವಾಗತ."
+  utter_goodbye:
+  - text: "ಬೈ ಬೈ! ಸಾಮ್ಸಂಗ್ ಸಹಾಯ ಬಾಟ್ ಯು ಹ್ಯಾಪ್ಪಿಯಾಗಿ ಬಳಸಿದ್ದರೆ ನನಗೆ ಖುಷಿಯಾಗುತ್ತದೆ."
+  utter_thanks:
+  - text: "ಸಹಾಯ ಮಾಡಿದವರಿಗೆ ಧನ್ಯವಾದಗಳು."
+  utter_help:
+  - text: "ನಿಮ್ಮ ಸಮಸ್ಯೆಯನ್ನು ಬಣ್ಣಿಸಿ, ನಾನು ನಿಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತೇನೆ."
+  utter_query:
+  - text: "ನೀವು ಏನು ಪ್ರಶ್ನೆ ಕೇಳುತ್ತಿದ್ದೀರಿ?"
+
+actions:
+  - action_query_handler
+  - ...

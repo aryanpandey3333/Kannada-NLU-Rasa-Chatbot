@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+- rule: respond to greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: respond to goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: respond to thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: provide help
+  steps:
+  - intent: help
+  - action: utter_help
+
+- rule: handle query
+  steps:
+  - intent: query
+  - action: action_query_handler

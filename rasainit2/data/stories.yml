@@ -1,0 +1,30 @@
+version: "3.1"
+
+stories:
+- story: greet and query
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: query
+  - action: action_query_handler
+
+- story: help and goodbye
+  steps:
+  - intent: help
+  - action: utter_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: thanks and greet
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+  - intent: greet
+  - action: utter_greet
+
+- story: query and goodbye
+  steps:
+  - intent: query
+  - action: action_query_handler
+  - intent: goodbye
+  - action: utter_goodbye
