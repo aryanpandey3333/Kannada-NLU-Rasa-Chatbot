@@ -1,0 +1,33 @@
+These steps are for installing and creating your own Rasa chatbot: -
+Use Anaconda platform to do these steps: -
+1. install Python: -
+   conda create --name name_project python==3.7.6
+2. activate project: -
+   conda activate name_project
+3. install  ujson: -
+   conda install ujson
+4. install tensorflow: -
+   conda install tensorflow
+5. install rasa: -
+   pip3 install rasa 
+ or 
+   pip3 install rasa==1.8.0
+ or
+  **check rasa version 
+   rasa --version
+#------------------------------------------#
+TIll 5th point all the things were were your C: Drive is but for installing the rasa files for you to change and edit its pipelining and traing new chatbot its preferable that you create a folder named anything and then using "cd" command change your path to that folder and then do the following steps.
+#------------------------------------------#
+6. add rasa init: -
+   rasa init
+7. run rasa whether on VS code or on terminal using: -
+   rasa shell
+ or 
+   rasa shell nlu
+#------------------------------------------#
+After opening the rasa init folder wherever you downloaded the files open it in any of the code editor i prefer VS code and then you can do the changes and for running after the changes you need to first activate the project by writing "conda activate project_name" this project needs to be the same name where you installed ujson, tensorflow and rasa files. After activating the virtual environment you can type:
+#------------------------------------------#
+8. train nlu: -
+   rasa train 
+ or 
+   rasa train nlu

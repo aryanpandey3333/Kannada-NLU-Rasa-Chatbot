@@ -1,0 +1,65 @@
+version: "3.1"
+
+intents:
+  - user_ask_help
+  - user_ask_warranty
+  - user_ask_repair
+  - user_ask_troubleshooting
+  - user_ask_device_compatibility
+  - user_ask_software_updates
+  - user_ask_product_features
+  - user_ask_accessories
+  - user_provide_positive_feedback
+  - user_provide_negative_feedback
+  - bye
+  - hello_from_samsung_bot
+  - okay_from_samsung_bot
+  - user_fallback
+
+responses:
+  utter_hello_from_samsung_bot:
+  - text: "Hello! I am the Samsung bot. How can I assist you today?"
+
+  utter_ask_help:
+  - text: "Sure, I'd be happy to help. How can I assist you today?"
+
+  utter_warranty_info:
+  - text: "For information on our product warranties, please visit our website or contact our customer support team."
+
+  utter_repair_info:
+  - text: "We offer repair services for our products. Please visit our website or contact our customer support team for more information."
+
+  utter_troubleshooting_info:
+  - text: "If you're experiencing issues with your device, our troubleshooting guide may be able to help. Please visit our website or contact our customer support team for assistance."
+
+  utter_device_compatibility_info:
+  - text: "Our products are compatible with a wide range of devices. For specific compatibility information, please visit our website or contact our customer support team."
+
+  utter_software_updates_info:
+  - text: "We periodically release software updates for our products to improve functionality and address issues. Please visit our website or contact our customer support team for more information."
+
+  utter_product_features_info:
+  - text: "Our products offer a wide range of features designed to meet the needs of our customers. For specific information on product features, please visit our website or contact our customer support team."
+
+  utter_accessories_info:
+  - text: "We offer a range of accessories to enhance your experience with our products. Please visit our website or contact our customer support team for more information."
+
+  utter_thank_you_feedback:
+  - text: "Thank you for your feedback. We appreciate it!"
+
+  utter_apologize_feedback:
+  - text: "We apologize for any issues you may have experienced. Please contact our customer support team for assistance."
+
+  utter_goodbye:
+  - text: "Goodbye! Have a great day ahead!!"
+
+  utter_okay_from_samsung_bot:
+  - text: "Alright. Let me know if you need further assistance."
+
+  utter_default_fallback:
+  - text: "I'm sorry, I didn't understand that. Can you please rephrase your question or issue?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
