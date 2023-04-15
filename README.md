@@ -2,9 +2,13 @@
 This new product is using Rasa and Spacy for providing an intelligent conversational UI for customers. One issue faced by us is the absence of suitable language model in Kannada. We are looking at developing a trained NLU model for Kannada using transfer learning and multi task learning.
 
 rasainit4 - This is for the Kannada Rasa chatbot. The model which we trained can talk to customres regarding the data he has been trained with.
+
 rasainit3 - This is for English Chatbot
+
 rasainit2 - This is also Kannada chatbot but with less data and its having some issue with action_handler_querry so you can see this for extracting nlu.yml file if something by chance happens to your rasainit4
+
 rasainit - Similarly the this is also English chatbot made as a backup plan if something do happen
+
 #----------------------------------------------------------------------------------------------------------------------------------------------#
 
 One thing which i would like to mention is that Rasa is terminal based if you want to integrate it with your website or app it is very much possible if you need any assisstance then you watch: https://www.youtube.com/watch?v=eJMT2FovZsM&t=515s
