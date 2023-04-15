@@ -1,0 +1,72 @@
+version: "3.1"
+
+rules:
+- rule: Greet the user when they say hello from Samsung bot
+  steps:
+  - intent: hello_from_samsung_bot
+  - action: utter_hello_from_samsung_bot
+
+- rule: Say goodbye when user says bye
+  steps:
+  - intent: bye
+  - action: utter_goodbye
+
+- rule: User asks for help
+  steps:
+  - intent: user_ask_help
+  - action: utter_ask_help
+
+- rule: User asks for warranty information
+  steps:
+  - intent: user_ask_warranty
+  - action: utter_warranty_info
+
+- rule: User asks for repair information
+  steps:
+  - intent: user_ask_repair
+  - action: utter_repair_info
+
+- rule: User asks for troubleshooting help
+  steps:
+  - intent: user_ask_troubleshooting
+  - action: utter_troubleshooting_info
+
+- rule: User asks about device compatibility
+  steps:
+  - intent: user_ask_device_compatibility
+  - action: utter_device_compatibility_info
+
+- rule: User asks about software updates
+  steps:
+  - intent: user_ask_software_updates
+  - action: utter_software_updates_info
+
+- rule: User asks about product features
+  steps:
+  - intent: user_ask_product_features
+  - action: utter_product_features_info
+
+- rule: User asks about accessories
+  steps:
+  - intent: user_ask_accessories
+  - action: utter_accessories_info
+
+- rule: User provides positive feedback
+  steps:
+  - intent: user_provide_positive_feedback
+  - action: utter_thank_you_feedback
+
+- rule: User provides negative feedback
+  steps:
+  - intent: user_provide_negative_feedback
+  - action: utter_apologize_feedback
+
+- rule: Acknowledge the user when they say "okay" to Samsung bot
+  steps:
+  - intent: okay_from_samsung_bot
+  - action: utter_okay_from_samsung_bot
+
+- rule: handle fallback input
+  steps:
+  - intent: user_fallback
+  - action: utter_default_fallback

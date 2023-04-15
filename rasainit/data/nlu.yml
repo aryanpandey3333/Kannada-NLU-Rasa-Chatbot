@@ -1,0 +1,314 @@
+version: "3.1"
+
+nlu:
+- intent: hello_from_samsung_bot
+  examples: |
+    - Hello from Samsung bot
+    - Hi Samsung bot
+    - Hey Samsung bot
+    - Greetings Samsung bot
+    - Hi
+    - Hello
+    - Hey
+    - Wassup!!
+    - Good morning Samsung bot
+    - Good afternoon Samsung bot
+    - Good evening Samsung bot
+    - Hello there Samsung bot
+    - What's up Samsung bot
+    - Howdy Samsung bot
+    - Salutations Samsung bot
+    - Hey there Samsung bot
+    - Hola Samsung bot
+    - Namaste Samsung bot
+    - Bonjour Samsung bot
+    - Konnichiwa Samsung bot
+    - Hello Samsung bot, can you help me with something?
+    - Hi there Samsung bot, what can you do?
+    - Hey Samsung bot, how's it going?
+    - Greetings Samsung bot, I have a question for you.
+
+- intent: user_ask_help
+  examples: |
+    - Can you help me?
+    - I need some assistance.
+    - How can I get help?
+    - What can you help me with?
+    - I'm stuck. Can you help?
+    - Please help me.
+    - I don't know what to do. Can you assist me?
+    - Is there anyone who can help me?
+    - Can you guide me on this?
+    - I'm having trouble. Can you provide some help?
+    - How do I get help from you?
+    - What kind of support can you offer?
+    - Can you lend me a hand?
+    - I'm in a bind. Can you help me out?
+
+- intent: user_ask_warranty
+  examples: |
+    - What is the warranty on my device?
+    - Is my device still under warranty?
+    - Can you provide information on warranties?
+    - How do I claim my warranty?
+    - Does my warranty cover accidental damage?
+    - What are the terms and conditions of my warranty?
+    - How long does the warranty last?
+    - Can I extend my warranty?
+    - How can I check the status of my warranty?
+    - Can you help me file a warranty claim?
+    - What documents do I need to claim my warranty?
+    - How long does it take to process a warranty claim?
+    - What is the warranty policy for refurbished devices?
+    - How do I transfer my warranty to someone else?
+
+- intent: user_ask_repair
+  examples: |
+    - How do I get my device repaired?
+    - My device is broken, what do I do?
+    - Can you help me with a repair?
+    - What are my repair options?
+    - How long does a repair typically take?
+    - How much will the repair cost?
+    - Can I repair my device myself?
+    - Where can I find a repair center near me?
+    - Can I mail my device in for repair?
+    - Do you offer a loaner device during the repair process?
+    - What is the warranty on repairs?
+    - Can you provide an estimate for the repair?
+    - What happens if my device can't be repaired?
+    - Can I get a replacement device instead of a repair?
+
+- intent: user_ask_troubleshooting
+  examples: |
+    - My device won't turn on, what should I do?
+    - My device is freezing, how do I fix it?
+    - How can I diagnose and fix a slow device?
+    - Can you help me troubleshoot a software issue?
+    - My device is not connecting to Wi-Fi, what should I do?
+    - How do I troubleshoot a Bluetooth connection problem?
+    - My device is overheating, what can I do?
+    - How do I clear cache and data on my device?
+    - What are some ways to conserve battery life on my device?
+    - How do I perform a factory reset on my device?
+    - My device is showing an error message, what does it mean?
+    - What are some tips for optimizing device performance?
+    - How do I update the software on my device?
+    - My device is not recognizing my SIM card, what should I do?
+
+- intent: user_ask_device_compatibility
+  examples: |
+    - Can I use your product on my device?
+    - My device is a Samsung Galaxy, will your product work on it?
+    - Does your product work with iPhones?
+    - Is there a compatibility list for your product?
+    - How can I tell if my device is compatible with your product?
+    - Can you tell me which devices are supported by your product?
+    - What are the device requirements for your product?
+    - Will your product work on my Windows computer?
+    - Is my smartwatch compatible with your product?
+    - Will your product work with my specific model/version of device?
+    - Do I need to have a certain operating system version for your product to work?
+    - Is there a minimum hardware requirement for my device to be compatible with your product?
+    - Can you tell me if my device's specifications meet the requirements for your product?
+    - What happens if my device is not compatible with your product?
+    - Are there any known issues or limitations with certain devices and your product?
+    - Can you recommend a compatible device if mine is not supported?
+    - How can I update my device's software to be compatible with your product?
+    - Is there a way to test compatibility before purchasing your product?
+    - Will using your product void my device's warranty?
+    - Can I still use your product with a device that is not officially supported?
+    - How often is the list of compatible devices updated?
+
+- intent: user_ask_software_updates
+  examples: |
+    - Is there a software update available for my device?
+    - How do I update my device software?
+    - Can you help me with a software update?
+    - What are the latest software updates?
+    - Is it necessary to update my device's software?
+    - When was the last software update released?
+    - Can you tell me more about the latest software update?
+    - How do I check if there are any available software updates?
+    - What is the process for updating my device's software?
+    - Will updating my device's software delete any of my data?
+    - Can I stop a software update once it has started?
+    - How long does a software update usually take to install?
+    - Can I use my device while a software update is installing?
+    
+- intent: user_ask_product_features
+  examples: |
+    - What are the key benefits of your product?
+    - How can your product help me solve my problem?
+    - What are the main features of your product that stand out?
+    - Can you give me some examples of how your product has helped other customers?
+    - How does your product compare to similar products on the market?
+    - Can you explain how your product works in more detail?
+    - What is the technology behind your product?
+    - Can you provide a demo of your product features?
+    - What kind of customer support is available for your product?
+    - Is there a free trial available for your product?
+    - What is the pricing for your product and what features are included at each tier?
+    - What are the advantages of using your product?
+    - How user-friendly is your product?
+    - Does your product offer any customization options?
+    - Can your product be integrated with other systems?
+    - How does your product perform in terms of speed and reliability?
+    - Can your product be used on multiple devices?
+    - Does your product offer any security features?
+    - What kind of technical support is available for your product?
+    - Is there a mobile app available for your product?
+    - Can you provide some real-world examples of how your product is used?
+    - Is there any training available for using your product?
+    - How does your product handle data privacy and protection?
+    - Does your product come with any warranties or guarantees?
+
+- intent: user_ask_accessories
+  examples: |
+    - Do you offer accessories for your product?
+    - What accessories are available for my device?
+    - How do I purchase accessories?
+    - Can you provide information on compatible accessories?
+    - What are the most popular accessories for my device?
+    - How do I know which accessories are compatible with my device?
+    - Do you have any recommendations for accessories that would work well with my device?
+    - How do I attach or install an accessory to my device?
+    - Can you explain the differences between different types of accessories?
+    - Is there a warranty or guarantee for accessories purchased from your company?
+    - Can I purchase accessories directly from your website or do I need to go through a third-party retailer?
+    - Are there any promotions or discounts currently available for accessories?
+    - Can you provide more information about a specific accessory I am interested in?
+    - Can you provide installation or setup instructions for an accessory?
+    - How do I troubleshoot issues with an accessory?
+    - Do you offer any maintenance services for accessories?
+    - Can you provide recommendations for protective accessories to keep my device safe?
+
+- intent: user_provide_positive_feedback
+  examples: |
+    - I love your product!
+    - Your customer service was excellent.
+    - Thank you for your help!
+    - I had a great experience with your company.
+    - Your product exceeded my expectations.
+    - Your team went above and beyond to assist me.
+    - I appreciate the quick response and resolution to my issue.
+    - I've recommended your product to my friends and family.
+    - Your company provides outstanding customer service.
+    - I'm impressed with the quality of your product.
+    - Thank you for making the purchasing process so easy.
+    - Your team was friendly and knowledgeable.
+    - I'm grateful for the assistance I received from your support team.
+    - Your product has made a significant difference in my life.
+    - The user interface of your product is intuitive and easy to use.
+    - Your company stands out for its attention to detail and professionalism.
+    - I've had a great experience with your product and company overall.
+    - Your team was patient and helpful in addressing my questions and concerns.
+    - Your product has saved me time/money/effort and I'm very satisfied with it.
+
+- intent: user_provide_negative_feedback
+  examples: |
+    - I had a terrible experience with your product.
+    - Your customer service was awful.
+    - I'm very unhappy with my purchase.
+    - I encountered several issues with your company.
+    - I'm extremely disappointed with the quality of your product.
+    - Your company did not deliver on its promises.
+    - I had a frustrating experience dealing with your customer service.
+    - I encountered several technical issues with your product.
+    - Your product did not meet my expectations.
+    - The delivery process was a complete disaster.
+    - Your company's communication was poor and unclear.
+    - I was charged incorrectly and it has been difficult to get a refund.
+    - The user interface of your product is confusing and unintuitive.
+    - I received poor value for the price I paid for your product.
+    - Your company's policies are unreasonable and inflexible.
+    - I experienced delays and setbacks during the purchasing process.
+    - Your product was not as described on your website.
+    - I encountered numerous bugs and glitches while using your product.
+    - Your company's website was difficult to navigate and use.
+
+- intent: bye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - see ya
+    - see you
+    - good night
+    - farewell
+    - take care
+    - catch you later
+    - talk to you later
+    - hasta la vista
+    - adios
+    - bye for now
+    - see you soon
+    - have a good one
+    - bye bye
+    - see you next time
+    - it was nice talking to you
+    - until next time
+    - peace out
+    - cheers
+    - bye Samsung bot, thanks for your help!
+
+- intent: okay_from_samsung_bot
+  examples: |
+    - Okay
+    - Alright
+    - Sure
+    - Sounds good
+    - Got it
+    - I understand
+    - No problem
+    - Perfect
+    - Great
+    - All righty
+    - Very well
+    - That works
+    - Okay, thank you
+    - Sounds good, thanks
+    - Okay, let's do it
+    - Sure, I'll follow your suggestion
+    - Okay Samsung bot, thanks for your help
+  
+- intent: user_fallback
+  examples: |
+    - Sorry, I didn't understand that.
+    - Can you please rephrase that?
+    - I'm not sure what you mean.
+    - Could you please clarify your request?
+    - yugvuygbuh
+    - abcdefghijklmnopqrstuvwxyz
+    - can you help me with hjkltyuio
+    - dsvdvm 
+    - dfndv
+    - a
+    - b
+    - sex
+    - demon
+    - tkill
+    - kok
+    - pill
+    - fuck
+    - rettytg
+    - potty
+    - sakshi
+    - abhfjdvnk
+    - ananya
+    - hell
+    - sdv vxklzxnclk
+    - hey fuck off
+    - hiii slut
+    - blibber
+    - flubber
+    - flobbidyjibbit
+    - wibblywobbly
+    - snickerdoodle
+    - flibbertigibbet
+    - snollygoster
+    - widdershins
+    - blubberfunk
+    - gibberish
+    - ./stop
+    - ,.s;'[]=-09'
